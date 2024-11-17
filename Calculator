@@ -1,0 +1,15 @@
+package com.dnk.calculator;
+
+
+import com.dnk.calculator.view.MainView;
+
+public class Calculator {
+
+    public static void main(String[] args) {
+        java.awt.EventQueue.invokeLater(new Runnable() {
+        public void run() {
+            new MainView().setVisible(true);
+        }
+    });
+    }
+}
