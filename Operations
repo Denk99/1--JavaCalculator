@@ -1,0 +1,54 @@
+package com.dnk.calculator.logic;
+
+public class Operations {
+    
+    private double num1;
+    private String operator;
+    private boolean error = false;
+    
+    public double Summ (double num2){
+        this.num1 += num2;
+        return this.num1;
+    }
+    public double Less (double num2){
+        this.num1 -= num2;
+        return this.num1;
+    }
+    public double By (double num2){
+        this.num1 *= num2;
+        return this.num1;
+    }
+    public void Divided (double num2){
+        if (0 != num2){
+            this.num1 /= num2;
+        }else{
+            this.num1 = 0;
+            this.error = true;
+        }
+    }
+
+    public double getNum1() {
+        return num1;
+    }
+
+    public void setNum1(double num1) {
+        this.num1 = num1;
+    }
+
+    public String getOperator() {
+        return operator;
+    }
+
+    public void setOperator(String operator) {
+        this.operator = operator;
+    }
+
+    public boolean isError() {
+        return error;
+    }
+
+    public void setError(boolean error) {
+        this.error = error;
+    }
+    
+}
